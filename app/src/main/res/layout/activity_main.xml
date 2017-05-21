@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.abejith.simplecalculator.MainActivity">
+
+    <EditText
+        android:id="@+id/number_entry"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="end"
+        android:hint="@string/zero"
+        android:inputType="numberDecimal"
+        android:textSize="40sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TableLayout
+        android:id="@+id/buttons_layout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number_entry">
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/plus"
+                android:gravity="center"
+                android:text="+"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/minus"
+                android:gravity="center"
+                android:text="-"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/asterix"
+                android:gravity="center"
+                android:text="*"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/slash"
+                android:gravity="center"
+                android:text="/"
+                android:textSize="35sp" />
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/seven"
+                android:gravity="center"
+                android:text="7"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/eight"
+                android:gravity="center"
+                android:text="8"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/nine"
+                android:gravity="center"
+                android:text="9"
+                android:textSize="35sp"
+                />
+
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/four"
+                android:gravity="center"
+                android:text="4"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/five"
+                android:gravity="center"
+                android:text="5"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/six"
+                android:gravity="center"
+                android:text="6"
+                android:textSize="35sp" />
+
+        </TableRow>
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/one"
+                android:gravity="center"
+                android:text="1"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/two"
+                android:gravity="center"
+                android:text="2"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/three"
+                android:gravity="center"
+                android:text="3"
+                android:textSize="35sp" />
+
+
+        </TableRow>
+
+    </TableLayout>
+</android.support.constraint.ConstraintLayout>
